@@ -3,15 +3,15 @@
 # The same function is used to encrypt and 
 # decrypt 
 def encrypt_decrypt(input_string)
-	# Define XOR key 
-	# Any character value will work 
-	xor_key = "P"
+  # Define XOR key 
+  # Any character value will work 
+  xor_key = "P"
 
-	# calculate length of input string 
-	l = input_string.length
+  # calculate length of input string 
+  l = input_string.length
 
-	# perform XOR operation of key 
-	# with every caracter in string
+  # perform XOR operation of key 
+  # with every caracter in string
   0.upto(l - 1) do |i|
     if i == 0
       input_string = ("" + ((input_string[i]).ord ^ (xor_key).ord).chr + input_string[i+1..-1])
